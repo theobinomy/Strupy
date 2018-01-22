@@ -7,6 +7,7 @@ inputtt = zipcode
 Sds = zipcode
 ss = zipcode
 s1 = zipcode
+Sms = '97089'
 
 print('what state is this design, 1 for oregon, 2 for california, 3 for washington, 4 for other')
 state = input('number here: ')
