@@ -1,11 +1,12 @@
 from math import sin, cos
-
+import pint
+u = pint.UnitRegistry()
 
 
 class WoodConnection:
     def __init__(self):
-        self.Woodconnection = WoodConnection
-        self.diameter = .25
+        # self.Woodconnection = WoodConnection
+        self.diameter = .25 * u.inch
         self.dowel_bearing_length = 1
         self.fastener_yield = 36000
         self.specific_gravity = .5
