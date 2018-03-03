@@ -2,15 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="481c3516-fa8a-4f54-ae1d-b638c52d76a8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/material specs/wood/chapter1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/material specs/wood/chapter2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/material specs/wood/chapter3.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/strucpy.iml" afterPath="$PROJECT_DIR$/.idea/strucpy.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/material specs/New Text Document.txt" afterPath="$PROJECT_DIR$/material specs/pinttest.py" />
-      <change beforePath="$PROJECT_DIR$/material specs/concrete/ACI318-14.py" afterPath="$PROJECT_DIR$/material specs/concrete/ACI318-14.py" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/connection.py" afterPath="$PROJECT_DIR$/material specs/wood/connection.py" />
+      <change beforePath="$PROJECT_DIR$/design process/2012_IBC-US_Ss_S1-0p05.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/design process/design criteria.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/design process/residential design process 2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/design process/residential design process.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gcodes/ASCE7-10/asce710.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gcodes/IBC2012/IBC.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gcodes/IBC2012/chap12.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gcodes/IBC2015/IBC.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gcodes/IBC2015/chap12.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gcodes/gcodemain.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gui/kivytest.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/loadapplication/lateral/seismic" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/loadapplication/loadtracer.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/loadapplication/matrix.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/loadapplication/pint documentations.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/40 python calcs/material specs - Shortcut.lnk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/concrete/ACI318-14.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/concrete/minsteel.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/masonry/Masonry.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/pinttest.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/steel/AISC310.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/steel/Output.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/steel/sapmat.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/steel/sapmatparser.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/steel/steel.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/steel/steeldataparser.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/steel/steeldesign.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/wood.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/NDS2015.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/NDS2015variables.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/chapter1.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/chapter2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/chapter3.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/connection.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/material specs/wood/renamepluszero.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,60 +51,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="connection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material specs/wood/connection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-194">
-              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chapter1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/material specs/wood/chapter1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pinttest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material specs/pinttest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="renamepluszero.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/material specs/wood/renamepluszero.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="design criteria.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design process/design criteria.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -152,17 +130,6 @@
               <item name="strucpy" type="b2602c69:ProjectViewProjectNode" />
               <item name="strucpy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="strucpy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="strucpy" type="462c0819:PsiDirectoryNode" />
-              <item name="material specs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="strucpy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="strucpy" type="462c0819:PsiDirectoryNode" />
-              <item name="material specs" type="462c0819:PsiDirectoryNode" />
-              <item name="wood" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -240,17 +207,24 @@
       <option name="project" value="LOCAL" />
       <updated>1516585150594</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="committing, many updates.">
+      <created>1519277764662</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1519277764662</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1849" height="1102" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.50223213" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.49776787" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.49776787" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -271,15 +245,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Doing the enw thing" />
     <MESSAGE value="Doing the enw thing1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Doing the enw thing1" />
+    <MESSAGE value="committing, many updates." />
+    <option name="LAST_COMMIT_MESSAGE" value="committing, many updates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/material specs/pinttest.py</url>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -289,9 +259,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -323,9 +291,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -391,13 +357,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/material specs/wood/connection.py">
+    <entry file="file://$PROJECT_DIR$/strupymain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -405,6 +369,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/material specs/wood/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>
