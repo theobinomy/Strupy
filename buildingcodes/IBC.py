@@ -10,89 +10,97 @@ Code Development Committee [BS]: Chapters \
 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
 Appendices F, G, H, I, J, L, M"""
 
-import asce7
+import asce710
 
 
-class chap15:
+class Chap15:
     '''ROOF ASSEMBLIES AND ROOFTOP STRUCTURES'''
     pass
     
 
-class chap16:
+class Chap16:
     ''' STRUCTURAL DESIGN '''
     #note I'm not sure what i'm going here so much.
-    def loads()
-        return asce7.loads
-    pass
-
-class chap17:
+    IsConventionalLightFrame = True
+    
+    def loads(self):
+        return asce710.loads
+    
+    
+    
+    def contractdocs(self):
+        print(f'floor loads are {asce710.floorloads()}')
+        print(f'ground snow loads are {asce710.snowloads()}')
+        print(f'wind speed is {asce710.wind()}')
+    pass #Finish Line 76
+class Chap17:
     '''  '''
     pass
  
-class chap18:
+class Chap18:
     '''  '''
     pass
  
-class chap19:
+class Chap19:
     '''  '''
     pass
  
-class chap20:
+class Chap20:
     '''  '''
     pass
  
-class chap21:
+class Chap21:
     '''  '''
     pass
     
 
-class chap22:
+class Chap22:
     '''  '''
     pass
  
-class chap23:
+class Chap23:
     '''  '''
     pass
  
-class chap24:
+class Chap24:
     '''  '''
     pass
  
-class chap25:
+class Chap25:
     '''  '''
     pass
  
-class appx_f:
-    '''  '''
-    pass
- 
- 
-class appx_g:
+class Appx_f:
     '''  '''
     pass
  
  
-class appx_h:
+class Appx_g:
     '''  '''
     pass
  
  
-class appx_i:
+class Appx_h:
     '''  '''
     pass
  
  
-class appx_j:
+class Appx_i:
     '''  '''
     pass
  
  
-class appx_l:
+class Appx_j:
     '''  '''
     pass
  
  
-class appx_m:
+class Appx_l:
+    '''  '''
+    pass
+ 
+ 
+class Appx_m:
     '''  '''
     pass
  
@@ -107,3 +115,9 @@ class label():
 
 
 print('IBC here and good')
+def tests():
+    c16 = Chap16()
+    c16.contractdocs()
+    pass
+if __name__ == '__main__':
+    tests()

@@ -7,15 +7,16 @@ def geoaddr(address):
   
 def appcode(state):
     if state == 'OR':
-        print('OSSC 14')
-        print('IBC 12')
-        print('aci 318 -11')
+        print('OSSC -14')
+        print('IBC -12')
+        print('ACI 318 -11')
     elif state == 'WA':
-        print('IBC 15')
-        print('aci 318 -14')
+        print('IBC -15')
+        print('ASCE 7 -10')
+        print('ACI 318 -14')
     elif state == 'CA': 
-        print('CBC 16')
-        print('aci 318 -14')
+        print('CBC -16')
+        print('ACI 318 -14')
          
 
 if __name__ =='__main__':
