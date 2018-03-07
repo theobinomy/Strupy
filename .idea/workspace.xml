@@ -2,46 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="481c3516-fa8a-4f54-ae1d-b638c52d76a8" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/stmwr.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/physics/beamdesign.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/design process/2012_IBC-US_Ss_S1-0p05.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/design process/design criteria.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/design process/residential design process 2.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/design process/residential design process.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gcodes/ASCE7-10/asce710.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gcodes/IBC2012/IBC.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gcodes/IBC2012/chap12.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gcodes/IBC2015/IBC.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gcodes/IBC2015/chap12.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gcodes/gcodemain.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/gui/kivytest.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loadapplication/lateral/seismic" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loadapplication/loadtracer.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loadapplication/matrix.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/loadapplication/pint documentations.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/40 python calcs/material specs - Shortcut.lnk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/concrete/ACI318-14.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/concrete/minsteel.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/masonry/Masonry.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/pinttest.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/steel/AISC310.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/steel/Output.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/steel/sapmat.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/steel/sapmatparser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/steel/steel.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/steel/steeldataparser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/steel/steeldesign.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/wood.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/NDS2015.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/NDS2015variables.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/chapter1.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/chapter2.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/chapter3.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/connection.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/material specs/wood/renamepluszero.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +14,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="beamdesign.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/physics/beamdesign.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,12 +50,13 @@
         <option value="$PROJECT_DIR$/material specs/wood/connection.py" />
         <option value="$PROJECT_DIR$/material specs/wood/chapter 1.py" />
         <option value="$PROJECT_DIR$/material specs/wood/chapter1.py" />
+        <option value="$PROJECT_DIR$/physics/beamdesign.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="903" />
-    <option name="width" value="934" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="904" />
+    <option name="width" value="933" />
     <option name="height" value="1090" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -129,6 +104,16 @@
             <path>
               <item name="strucpy" type="b2602c69:ProjectViewProjectNode" />
               <item name="strucpy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="strucpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="strucpy" type="462c0819:PsiDirectoryNode" />
+              <item name="buildingcodes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="strucpy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="strucpy" type="462c0819:PsiDirectoryNode" />
+              <item name="physics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,14 +203,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1849" height="1102" extended-state="6" />
+    <frame x="904" y="0" width="933" height="1090" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6689498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.50223213" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.49776787" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33446327" sideWeight="0.49776787" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -250,7 +236,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -377,6 +363,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/physics/beamdesign.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
