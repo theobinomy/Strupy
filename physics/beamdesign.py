@@ -1,5 +1,12 @@
 '''this file will do the heavy lififting for design of beams'''
 from typing import NamedTuple
+import attr
+
+
+@attr.s
+class unitts():
+    pass
+
 class units(NamedTuple):
     val: float
     defs: str
@@ -71,7 +78,17 @@ def simplebeamuniformload_partiallydis_oneend(w,l,a):
 
     return R1, R2, M, delta
 
-
+def uniformloadpartiallydistributedeachend(a,b,c,w1, w2,l):
+    x = l
+    R1 = w1*a*(2*l-a)+w2*c**2 / (2*l)
+    R2 = w2*c*(2*l-c)+w2*a**2 / (2*l)
+    if R1 < w1*a:
+        Mmax = R1**2 / 2*w1
+    else:
+        Mmax = R2 ** 2 / 2 * w2
+    M = Mmax
+    delta = 10
+    return R1, R2, M, delta
 
 
 class unit():
