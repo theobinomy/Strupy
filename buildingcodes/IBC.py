@@ -10,21 +10,21 @@ Code Development Committee [BS]: Chapters \
 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25,
 Appendices F, G, H, I, J, L, M"""
 
-import asce710
+import buildingcodes.asce710
 
-
+'''
 class Chap15:
-    '''ROOF ASSEMBLIES AND ROOFTOP STRUCTURES'''
+    \'''ROOF ASSEMBLIES AND ROOFTOP STRUCTURES\'''
     pass
-    
+'''
 
 class Chap16:
     ''' STRUCTURAL DESIGN '''
     #note I'm not sure what i'm going here so much.
     IsConventionalLightFrame = True
     
-    def loads(self):
-        return asce710.loads
+    def loadfactor(self):
+        return asce710.loadfactors()
     
     
     
@@ -32,7 +32,9 @@ class Chap16:
         print(f'floor loads are {asce710.floorloads()}')
         print(f'ground snow loads are {asce710.snowloads()}')
         print(f'wind speed is {asce710.wind()}')
+    #ref = contractdocs()
     pass #Finish Line 76
+'''
 class Chap17:
     '''  '''
     pass
@@ -103,6 +105,8 @@ class Appx_l:
 class Appx_m:
     '''  '''
     pass
+    
+'''
  
     
     

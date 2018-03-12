@@ -4,7 +4,7 @@ import attr
 
 
 @attr.s
-class unitts():
+class notation():
     pass
 
 class units(NamedTuple):
