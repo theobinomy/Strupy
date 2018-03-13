@@ -16,16 +16,12 @@ class notation(object):
     z = 1*ur.dimensionless
     units = attr.ib(default = 1*ur.dimensionless)
 
-
-
 import NDS2015variables as ndv
 #SS 1.6
-
 
 import buildingcodes.IBC as ibc
 
 loads = ibc.Chap16()
-
 
 #2.4.2
 loadDurationFactor = {'':''}
@@ -55,7 +51,6 @@ temperatureFactor = 1.0 #fill out later, NDS 2.3.3
 #----------------
 #chapter three is about analyzing bending stresses on wood
 
-
 #3.1.1 scope
 # scope is general design provisions for NdS, DCR < 1
 
@@ -74,7 +69,6 @@ temperatureFactor = 1.0 #fill out later, NDS 2.3.3
 #3.2 span length = length + 1/2 bearing length on each end
 spanlength = 10*ur.feet
 spanlength = spanlength + 4*ur.inch
-
 
 #3.3.1
 demand, capacity = 80, 100
@@ -105,19 +99,37 @@ secmod = (b*d**2)/6
 assert secmod.dimensionality == '[length] ** 3'
 cL = notation('beam stability factor', 'inch')
 
-el_e = notation('effective length', 1)
+el_e = 1
 
 Rb = (el_e * d / (b**2))
 
+if not Rb._magnitude<50:
+    print('Rb sucks')
+else:
+    print('rb is cool')
+Emin = 1
+Fbe = 1.2*Emin / Rb.magnitude**2
+Fbs = 1
+if not cL ==1:
+    a = (1+ Fbe/Fbs)/1.9
+    b = (Fbe/Fbs)/0.95
+    cL = a - (a**2-b)**.5
 
+#3.4 beming members - shear
+#3.4.1.1 DCR < 1
+#3.4.1.2 testing required for strength of built up members EI TJI/glulam/open web
 
+#3.4.2
+V = 1 #load from demand value
+fv = (3*V) / (2*b*d)
 
+#3.4.3 May disregard uniform loads within depth of member
+#may factor point loads by % of d away from point load
 
+#if noteched in the tensoin face
+#v'r = (2/3 * Fv * b * d) * (dn / d)**2
+#if circular replace b*d w/ A
 
+#when noted on the compression face
+#v'r = (2/3) *rv * b *(d-(d-dn)/dn*e)
 
-print('printed')
-pointload = 10
-area = 10
-
-#ff = woodDensity[0]
-#print(ff)
