@@ -133,3 +133,49 @@ fv = (3*V) / (2*b*d)
 #when noted on the compression face
 #v'r = (2/3) *rv * b *(d-(d-dn)/dn*e)
 
+#3.4.3.3
+fpv = 1
+de = 1
+d = 1
+vprimer = (2/3) * (fpv * b * d)*(de/d)**2
+#need to split this out for s differnt condtions
+
+#3.5 beindg deflectoin
+delta_lt = 1 #long term deflectoin
+delta_st = 1 #short term deflectoin
+Kcr = 1.5
+
+deltat = Kcr * delta_lt * delta_st
+
+#3.6 copressoin - general
+#3.6.1 terminology - all members in compression
+
+#3.6.2 wood columns
+#3.6.3 - see 3.1.2 for fe calculated values
+
+#see appendix A.11 for column compression bracing
+
+#3.7
+Cp  = 1
+Ke = 1.2 #end fixity conditoin
+el = 1 #effective length
+el_e = Ke * el
+Fc = 1900000
+#3.7.1.5
+Fc = (0.822*Emin)/(el_e/d)**2
+
+FcE = 10000 #compressoin strength
+c = 0.85
+a = ((1+ (FcE/ Fc))/(2*c))
+b = (FcE/Fc)/c
+Cp = a * (a**2 * b)**.5
+
+#3.7.2
+d = 1
+d_min = d * .5
+d_max = d
+a = .7
+d = d_min + (d_max-d_min)*(a - 0.15*(1-d_min/d_max))
+print(d, 'd')
+
+d = d_min + (d_max-d_min)*(1/3)
