@@ -81,7 +81,7 @@ else:
 
 #3.3.2 flexural deisgn
 import physics.beamdesign as demand
-_, M, _= demand.simplebeamuniformload(10,10)
+__, M, __ = demand.simplebeamuniformload(10,10)
 M = M*ur.inch*ur.lb
 b = 1.5*ur.inch
 d = 3.5*ur.inch
@@ -213,12 +213,16 @@ b = fb1 / (Fpb1 * (1 - fc / FcE1))
 print(b)
 c = fb2 / (Fpb2 * (1-(fc / FcE2) - (fb1 / FbE)**2))
 print(c)
+FbE = 1.20 * (Epmin / 1**2)   #todo fix :: Fbe = 1.20 * (Epmin / Rb**2)
+
+Rb.
 if not (a+b+c) < 1:
     print('beinding + compression loads in failure', a+b+c)
-d = fc/FcE2 + (fb1/FbE)**2
+d = fc /FcE2 + (fb1/FbE) #**2
 if not d < 1:
     print('failed at 3.9-4')
 else:
     print('bending + compresison loads ok')
 
 
+fc
