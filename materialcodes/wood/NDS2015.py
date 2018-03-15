@@ -225,4 +225,4 @@ else:
     print('bending + compresison loads ok')
 
 
-fc
+#3.10  #todo all of 3.10 :P
