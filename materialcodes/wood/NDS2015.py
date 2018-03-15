@@ -179,3 +179,46 @@ d = d_min + (d_max-d_min)*(a - 0.15*(1-d_min/d_max))
 print(d, 'd')
 
 d = d_min + (d_max-d_min)*(1/3)
+#3.9.1 bending
+ft = 1
+Fpt = 1
+fb = .9
+Fpb =1
+
+if not (ft / Fpt + fb / Fpb) < 1:
+    print('conbined axial and loading in failure')
+else:
+    print('combined axial and bending ok')
+
+#3.9.2
+fc = .3
+Fpc = 1
+fb1 = .3
+Fpb1 = 1
+
+fb2 = .3
+Fpb2 = 1
+
+FbE = .6
+Epmin = 200
+el_e1 = 100
+el_e2 = 100
+d1 = 10
+d2 = 10
+FcE1 = (0.822 * Epmin) / (el_e1 / d1)**2
+FcE2 = (0.822 * Epmin) / (el_e2 / d2)**2
+a = (fc / Fpc) **2
+print(a)
+b = fb1 / (Fpb1 * (1 - fc / FcE1))
+print(b)
+c = fb2 / (Fpb2 * (1-(fc / FcE2) - (fb1 / FbE)**2))
+print(c)
+if not (a+b+c) < 1:
+    print('beinding + compression loads in failure', a+b+c)
+d = fc/FcE2 + (fb1/FbE)**2
+if not d < 1:
+    print('failed at 3.9-4')
+else:
+    print('bending + compresison loads ok')
+
+
