@@ -226,3 +226,8 @@ else:
 
 
 #3.10  #todo all of 3.10 :P
+
+class notation():
+    def __init__(self):
+        self.name
+        self.location
