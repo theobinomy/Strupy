@@ -31,7 +31,7 @@ def load_combo(D=0, Lr =0, S =0, R=0,W=0,L=0,E=0,H=0):
 
 
 def load_combo_asd(D=0, Lr =0, S =0, R=0,W=0,L=0,E=0,H=0):
-    #LRFD
+    #ASD
     l1 = D
     l2 = D + L
     opt1 = [Lr,S,R]
