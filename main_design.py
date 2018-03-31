@@ -10,13 +10,20 @@ def appcode(state):
         print('OSSC -14')
         print('IBC -12')
         print('ACI 318 -11')
+        print('NDS -12')
+        print('AISC -10')
     elif state == 'WA':
         print('IBC -15')
         print('ASCE 7 -10')
         print('ACI 318 -14')
+        print('NDS -15')
+        print('AISC -10')
     elif state == 'CA': 
         print('CBC -16')
+        print('ASCE 7 -10')
         print('ACI 318 -14')
+        print('NDS -15')
+        print('AISC -10')
          
 
 if __name__ =='__main__':
