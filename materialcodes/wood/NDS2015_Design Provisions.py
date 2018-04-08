@@ -186,7 +186,7 @@ fb = .9
 Fpb =1
 
 if not (ft / Fpt + fb / Fpb) < 1:
-    print('conbined axial and loading in failure')
+    print('combined axial and loading in failure')
 else:
     print('combined axial and bending ok')
 
@@ -215,7 +215,6 @@ c = fb2 / (Fpb2 * (1-(fc / FcE2) - (fb1 / FbE)**2))
 print(c)
 FbE = 1.20 * (Epmin / 1**2)   #todo fix :: Fbe = 1.20 * (Epmin / Rb**2)
 
-Rb.
 if not (a+b+c) < 1:
     print('beinding + compression loads in failure', a+b+c)
 d = fc /FcE2 + (fb1/FbE) #**2
