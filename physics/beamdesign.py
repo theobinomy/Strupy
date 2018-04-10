@@ -45,11 +45,15 @@ W['val'] = 10
 
 
 
-def simplebeamuniformload(w,l):
-    R = w * l
-    M = w*l**2 * (1/8)
-    delta = (5*w*l**4) / (384 * 1000 * 10000)
-    return R, M, delta
+class simplebeamuniformload():
+    def __init__(self, w, l):
+        R = w * l
+        M = w*l**2 * (1/8)
+        delta = (5*w*l**4) / (384 * 1000 * 10000)
+        self.R = R
+        self.M = M
+        self.delta = delta
+
 
 def simplebeamuniformload_partiallydis_mid(w,l, a, b, c):
     x = l

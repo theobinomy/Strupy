@@ -4,34 +4,14 @@ Created on Fri Mar 30 18:18:13 2018
 
 @author: stmwr
 """
-from wooddataparser import pass_wood
-from sawn_lumber_adjustments import Sawnlumberdimensions
+from materialcodes.wood.wooddataparser import WoodSpecies
+from materialcodes.wood.sawn_lumber_adjustments import Sawnlumberdimensions
+import physics.beamdesign
 
-woods = pass_wood()
-   
-class WoodSpecies():    
-    woods = pass_wood()        
-    ''' this object is the wood object information)  
-    def __init__(self, e, e_main, fb, fc_par, fc_perp, ft, fv, grade, 
-    size, species, sp_grav, name): #,e, fb, fc_par, fc_perp, ft, fv, grade, name, size, species):'''
-    def __init__(self, name): #,e, fb, fc_par, fc_perp, ft, fv, grade, name, size, species):
-        #super(wood_species, self).__init__(name)
-        self.e =       woods[name]['E']
-        self.e_min =   woods[name]['EMIN']
-        self.fb =      woods[name]['FB'] 
-        self.fc_par =  woods[name]['FC_PAR'] 
-        self.fc_perp = woods[name]['FC_PERP'] 
-        self.ft =      woods[name]['FT']
-        self.fv =      woods[name]['FV']
-        self.grade =   woods[name]['GRADE']
-        self.size =    woods[name]['SIZE']
-        self.species = woods[name]['SPECIES']
-        self.sp_grav = woods[name]['SP_GRAV']
-        self.name = name
 
 class WoodBeam(WoodSpecies, Sawnlumberdimensions):
     def __init__(self, name, size, length=10):
-        WoodSpecies.__init__(self, name)
+        WoodSpecies.__init__(self, name:str)
         Sawnlumberdimensions.__init__(self, size)
         self.length = length
     
@@ -41,20 +21,25 @@ class WoodBeam(WoodSpecies, Sawnlumberdimensions):
         density = round(density,2)
         return density
 
-class WoodBeamAnalysis(WoodBeam):
-    def __init__(self, name, size, length=10):
+class WoodBeamAnalysis(WoodBeam, physics.beamdesign.simplebeamuniformload):
+    def __init__(self, name:str, size:str, w_, length=10):
         WoodBeam.__init__(self, name, size, length)
+        physics.beamdesign.simplebeamuniformload.__init__(self, w_, length)
         pass
         
-    def capacity():
+    def capacity(self):
         print('such capacity')
 
-    
+    def momdcr(self):
+        momap = self.M / self.s_x
+        dcr = momap / self.fb
+        print(dcr)
+
 
 if __name__ == "__main__":
     twood = 'ALASKA SPRUCE NO.3 2 IN. & WIDER'
     size = '4x10'
     #foo = wood_species('ALASKA SPRUCE NO.3 2 IN. & WIDER')
     #bar = wood_beam(twood, '4x12')
-    baz = WoodBeamAnalysis(twood, size)
+    baz = WoodBeamAnalysis(twood, size, 10, 10)
     pass
