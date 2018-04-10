@@ -11,7 +11,7 @@ import physics.beamdesign
 
 class WoodBeam(WoodSpecies, Sawnlumberdimensions):
     def __init__(self, name, size, length=10):
-        WoodSpecies.__init__(self, name:str)
+        WoodSpecies.__init__(self, name)
         Sawnlumberdimensions.__init__(self, size)
         self.length = length
     
@@ -26,20 +26,26 @@ class WoodBeamAnalysis(WoodBeam, physics.beamdesign.simplebeamuniformload):
         WoodBeam.__init__(self, name, size, length)
         physics.beamdesign.simplebeamuniformload.__init__(self, w_, length)
         pass
-        
+
+    def __repr__(self):
+        return f'WoodBeamAnalysis method'
+    def __str__(self):
+        return 'analysis method for wood beam'
+
     def capacity(self):
         print('such capacity')
 
     def momdcr(self):
         momap = self.M / self.s_x
-        dcr = momap / self.fb
+        dcr = momap / self.Fb
         print(dcr)
 
 
 if __name__ == "__main__":
     twood = 'ALASKA SPRUCE NO.3 2 IN. & WIDER'
-    size = '4x10'
+    size = '2x4'
     #foo = wood_species('ALASKA SPRUCE NO.3 2 IN. & WIDER')
     #bar = wood_beam(twood, '4x12')
-    baz = WoodBeamAnalysis(twood, size, 10, 10)
+    baz = WoodBeamAnalysis(twood, size, 120, 10)
+    baz.momdcr()
     pass

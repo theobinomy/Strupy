@@ -45,19 +45,17 @@ def pass_wood():
     return woods
  
 class WoodSpecies():
-    #zzwoods = pass_wood()
     ''' this object is the wood object information)
     def __init__(self, e, e_main, fb, fc_par, fc_perp, ft, fv, grade,
     size, species, sp_grav, name): #,e, fb, fc_par, fc_perp, ft, fv, grade, name, size, species):'''
-    def __init__(self, name): #,e, fb, fc_par, fc_perp, ft, fv, grade, name, size, species):
-        #super(wood_species, self).__init__(name)
-        self.e =       woods[name]['E']
-        self.e_min =   woods[name]['EMIN']
-        self.fb =      woods[name]['FB']
-        self.fc_par =  woods[name]['FC_PAR']
-        self.fc_perp = woods[name]['FC_PERP']
-        self.ft =      woods[name]['FT']
-        self.fv =      woods[name]['FV']
+    def __init__(self, name):
+        self.E =       woods[name]['E']
+        self.Emin =   woods[name]['EMIN']
+        self.Fb =      woods[name]['FB']
+        self.Fc_par =  woods[name]['FC_PAR']
+        self.Fc_perp = woods[name]['FC_PERP']
+        self.Ft =      woods[name]['FT']
+        self.Fv =      woods[name]['FV']
         self.grade =   woods[name]['GRADE']
         self.size =    woods[name]['SIZE']
         self.species = woods[name]['SPECIES']
