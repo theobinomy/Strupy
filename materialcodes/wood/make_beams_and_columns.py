@@ -4,7 +4,8 @@ Created on Fri Mar 30 18:18:13 2018
 
 @author: stmwr
 """
-from materialcodes.wood.wooddataparser import WoodSpecies
+
+from materialcodes.wood.wooddataparser import WoodSpecies, ur
 from materialcodes.wood.sawn_lumber_adjustments import Sawnlumberdimensions
 import physics.beamdesign
 
@@ -38,14 +39,15 @@ class WoodBeamAnalysis(WoodBeam, physics.beamdesign.simplebeamuniformload):
     def momdcr(self):
         momap = self.M / self.s_x
         dcr = momap / self.Fb
+        dcr.ito_base_units()
         print(dcr)
-
+        return dcr
 
 if __name__ == "__main__":
     twood = 'ALASKA SPRUCE NO.3 2 IN. & WIDER'
-    size = '2x4'
+    size = '2x8'
     #foo = wood_species('ALASKA SPRUCE NO.3 2 IN. & WIDER')
     #bar = wood_beam(twood, '4x12')
-    baz = WoodBeamAnalysis(twood, size, 120, 10)
-    baz.momdcr()
+    baz = WoodBeamAnalysis(twood, size, 12 * ur.lbf / ur.foot, 8*ur.feet)
+    cr = baz.momdcr()
     pass

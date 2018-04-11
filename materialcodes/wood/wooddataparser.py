@@ -6,6 +6,9 @@ Created on Tue May 30 15:56:40 2017
 @author: sean
 """
 import csv
+import pint
+ur = pint.UnitRegistry(system = 'imperial')
+
 
 #creates list of datafile
 i = []
@@ -49,15 +52,15 @@ class WoodSpecies():
     def __init__(self, e, e_main, fb, fc_par, fc_perp, ft, fv, grade,
     size, species, sp_grav, name): #,e, fb, fc_par, fc_perp, ft, fv, grade, name, size, species):'''
     def __init__(self, name):
-        self.E =       woods[name]['E']
-        self.Emin =   woods[name]['EMIN']
-        self.Fb =      woods[name]['FB']
-        self.Fc_par =  woods[name]['FC_PAR']
-        self.Fc_perp = woods[name]['FC_PERP']
-        self.Ft =      woods[name]['FT']
-        self.Fv =      woods[name]['FV']
+        self.E =       woods[name]['E'] * ur.psi
+        self.Emin =   woods[name]['EMIN'] * ur.psi
+        self.Fb =      woods[name]['FB'] * ur.psi
+        self.Fc_par =  woods[name]['FC_PAR'] * ur.psi
+        self.Fc_perp = woods[name]['FC_PERP'] * ur.psi
+        self.Ft =      woods[name]['FT'] * ur.psi
+        self.Fv =      woods[name]['FV'] * ur.psi
         self.grade =   woods[name]['GRADE']
         self.size =    woods[name]['SIZE']
         self.species = woods[name]['SPECIES']
-        self.sp_grav = woods[name]['SP_GRAV']
+        self.sp_grav = woods[name]['SP_GRAV'] * ur.dimensionless
         self.name = name

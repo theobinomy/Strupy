@@ -4,7 +4,7 @@ Created on Fri Mar 30 18:20:24 2018
 
 @author: stmwr
 """
-
+from materialcodes.wood.wooddataparser import ur
 
 class SawnLumberMemberAdjustment():
     def __init__(self):
@@ -69,8 +69,8 @@ class Sawnlumberdimensions():
             r1[ind] = i
             ind += 1                
 
-        self.b = r1[0]
-        self.d = r1[1]
+        self.b = r1[0] * ur.inch
+        self.d = r1[1] * ur.inch
     
     @property
     def area(self):
