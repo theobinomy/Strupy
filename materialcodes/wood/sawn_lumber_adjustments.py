@@ -8,33 +8,43 @@ from materialcodes.wood.wooddataparser import ur
 
 class SawnLumberMemberAdjustment():
     def __init__(self):
+        self.C_M_E = 1
         self.C_M_Fb = 1
         self.C_t_Fb = 1
-        self.C_L =1
+        self.C_L = 1
         self.C_F_Fb = 1
         self.C_fu_Fb = 1
         self.C_i_Fb = 1
         self.C_r = 1
-        self.lambd = 12
+        self.lambd = 1
+        self.C_M_Fc = 1
+        self.C_t_Fc =1
+        self.C_F_Fc =1
+        self.C_i_Fc=1
+        self.C_P =1
+        self.C_M_Fv =1
+        self.C_t_Fv =1
+        self.C_i_Fv =1
     
-    def getAdjustedBendingDesignValue(self):
+    def getAdjustedBendingDesignValue(self, f_b):
         phi = 0.85 #; //Table 4.3.1
         K_f = 2.54 #; //Table 4.3.1
-        F_b_prime = phi * K_f * self.fb *  self.lambd * self.C_M_Fb * \
+
+        F_b_prime = phi * K_f * f_b *  self.lambd * self.C_M_Fb * \
                     self.C_t_Fb * self.C_L * self.C_F_Fb * self.C_fu_Fb *\
                     self.C_i_Fb * self.C_r
         return F_b_prime
         
-    def GetAdjustedCompressionDesignValue(self):
+    def GetAdjustedCompressionDesignValue(self, f_c):
         phi = 0.9 #; //Table 4.3.1
         K_f = 2.4 #; //Table 4.3.1
-        F_c_prime = phi * K_f * self.fc * self.lambd * self.C_M_Fc * self.C_t_Fc *  self.C_F_Fc * self.C_i_Fc * self.C_P
+        F_c_prime = phi * K_f * f_c * self.lambd * self.C_M_Fc * self.C_t_Fc *  self.C_F_Fc * self.C_i_Fc * self.C_P
         return F_c_prime
 
-    def GetAdjustedShearDesignValue(self):
+    def GetAdjustedShearDesignValue(self, f_v):
         phi = 0.75 #; //Table 4.3.1
         K_f = 2.88 #; //Table 4.3.1
-        F_v_prime = phi * K_f *F_c *  self.lambd * self.C_M_Fv * self.C_t_Fv *  self.C_i_Fv
+        F_v_prime = phi * K_f *f_v *  self.lambd * self.C_M_Fv * self.C_t_Fv *  self.C_i_Fv
         return F_v_prime
         
     def GetAdjustedTensionValue(self):
@@ -44,7 +54,7 @@ class SawnLumberMemberAdjustment():
         return F_t_prime
     
     def GetAdjustedModulusOfElasticity(self):
-        E_prime = self.E * self.C_M * self.C_t_E * self.C_i #;  //from Table 4.3.1
+        E_prime = E * self.C_M * self.C_t_E * self.C_i #;  //from Table 4.3.1
         return E_prime
         
     def GetAdjustedMinimumModulusOfElasticityForStability(self):
@@ -62,10 +72,10 @@ class Sawnlumberdimensions():
             i = int(i)
             if i < 8:
                 i = i - .5
-                print(i)
+                #print(i)
             elif i >= 8:
                 i = i - .75
-                print(i)
+                #print(i)
             r1[ind] = i
             ind += 1                
 
@@ -74,7 +84,9 @@ class Sawnlumberdimensions():
     
     @property
     def area(self):
-        return self.d * self.b
+        area = self.d * self.b
+        assert area.dimensionality == '[length]**2'
+        return area
     
     @property
     def mom_x(self):

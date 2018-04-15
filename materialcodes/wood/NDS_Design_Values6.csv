@@ -205,13 +205,13 @@ RED OAK Standard 2 in. - 4 in. wide,RED OAK,Standard,2 in. - 4 in. wide,525,300,
 RED OAK Utility 2 in. - 4 in. wide,RED OAK,Utility,2 in. - 4 in. wide,250,150,170,820,425,1000000,370000,0.67
 REDWOOD ClearStructural 2 in. & wider,REDWOOD,ClearStructural,2 in. & wider,1750,1000,160,650,1850,1400000,510000,0.44
 REDWOOD SelectStructural 2 in. & wider,REDWOOD,SelectStructural,2 in. & wider,1350,800,160,650,1500,1400000,510000,0.44
-REDWOOD SelectStructural opengrain,REDWOOD,SelectStructural,opengrain,,1100,625,160,425,1100,1100000,400000
+REDWOOD SelectStructural opengrain,REDWOOD,SelectStructural,opengrain,1100,625,160,425,1100,1100000,400000, 0.37
 REDWOOD No.1 2 in. & wider,REDWOOD,No.1,2 in. & wider,975,575,160,650,1200,1300000,470000,0.44
-REDWOOD No.1 opengrain,REDWOOD,No.1,opengrain,,775,450,160,425,900,1100000,400000
+REDWOOD No.1 opengrain,REDWOOD,No.1,opengrain,775,450,160,425,900,1100000,400000, 0.37
 REDWOOD No.2 2 in. & wider,REDWOOD,No.2,2 in. & wider,925,525,160,650,950,1200000,440000,0.44
-REDWOOD No.2 opengrain,REDWOOD,No.2,opengrain,,725,425,160,425,700,1000000,370000
+REDWOOD No.2 opengrain,REDWOOD,No.2,opengrain,725,425,160,425,700,1000000,370000, 0.37
 REDWOOD No.3 2 in. & wider,REDWOOD,No.3,2 in. & wider,525,300,160,650,550,1100000,400000,0.44
-REDWOOD No.3 opengrain,REDWOOD,No.3,opengrain,,425,250,160,425,400,900000,330000
+REDWOOD No.3 opengrain,REDWOOD,No.3,opengrain,425,250,160,425,400,900000,330000, 0.37
 REDWOOD Stud 2 in. & wider,REDWOOD,Stud,2 in. & wider,575,325,160,425,450,900000,330000,0.44
 REDWOOD Construction 2 in. - 4 in. wide,REDWOOD,Construction,2 in. - 4 in. wide,825,475,160,425,925,900000,330000,0.44
 REDWOOD Standard 2 in. - 4 in. wide,REDWOOD,Standard,2 in. - 4 in. wide,450,275,160,425,725,900000,330000,0.44
